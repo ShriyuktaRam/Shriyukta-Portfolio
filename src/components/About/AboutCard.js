@@ -11,7 +11,7 @@ function AboutCard() {
             Hey, I am <span className="purple">Ritika Ghanti </span>
             from <span className="purple"> Arlington, Texas</span>
             <br />
-            I am currently pursuing my Master's in Computer Science from The University of Texas at Arlington.
+            I am currently pursuing my Master's in Computer Science at The University of Texas at Arlington.
             <br />
             I have 1.5 years of Software Engineering internship and 1 year of Teaching Assistant experience 
             <br />
