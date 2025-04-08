@@ -9,7 +9,7 @@ function ProfessionalExperience() {
           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Col xs={4} md={2} className="professional-experience">
           <p style={{ textAlign: "justify" }}>
-            <span className="purple">➡ Researcher/Teaching </span>
+            <span className="purple">➡ Research Engineer/GTA </span>
             <br />April 2024 - May 2025<br />The University of Texas at Arlington
             <br /><br />
             <span className="purple">➡ Software Developer</span>
