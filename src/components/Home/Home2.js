@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
+import HeroSection from "./HeroSection";  // path relative to Home.js
+import { FaBriefcase, FaTrophy, FaGraduationCap } from "react-icons/fa";
+
 import {
   AiFillGithub,
 } from "react-icons/ai";
@@ -12,53 +15,50 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-            I’m a problem solver at heart and a technologist by choice.
-              <br />
-              <br />I am fluent in techs such as
-              <i>
-                <b className="purple"> Java, React and Javascript. </b>
-              </i>
-              <br />
-              <br />
-              I thrive on challenges—whether it’s optimizing a project for  &nbsp;
-              <i>
-                <b className="purple">accuracy </b>, designing  {" "}
-                <b className="purple">scalable </b> APIs, or
-                <b className="purple"> debugging </b>complex code
-              </i>
-              <br />
-              <br />
-              Beyond coding, I enjoy <b className="purple">mentoring, collaborating, and leading </b> 
-              projects that push boundaries. 
-              <br />
-              <br />
-              And when I’m not building software, you’ll probably find me on a cycling trail, embracing the same persistence and endurance that drive my work.
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" 
-              style={{ width: "250px", height: "250px"}}
-              />
-            </Tilt>
-          </Col>
-        </Row>
-        <Row>
+        
+      <div className="about-me-section">
+            <div className="about-me-text">
+              <h2>About Me</h2>
+              <p>
+                I'm a <strong>software developer</strong> passionate about building impactful tech and exploring how 
+                <strong> AI is transforming industries</strong> and everyday life. I thrive on 
+                <strong> problem-solving</strong>—whether it's designing scalable systems or diving deep into data. 
+                I love turning ideas into <strong>solutions that matter</strong>. Beyond the keyboard, I'm also a 
+                <strong> hands-on creative</strong> and a <strong>wellness enthusiast</strong> with a strong entrepreneurial spirit.
+              </p>
+            </div>
+      
+            {/* Stats Cards - now in one row */}
+            <div className="stats-row">
+              <div className="stat-card">
+                <FaBriefcase className="stat-icon" />
+                <h3>3+</h3>
+                <p>Years of Experience</p>
+              </div>
+              <div className="stat-card">
+                <FaTrophy className="stat-icon" />
+                <h3>12+</h3>
+                <p>Projects</p>
+              </div>
+              <div className="stat-card">
+                <FaGraduationCap className="stat-icon" />
+                <h3>MS in CS</h3>
+                <p>UT Arlington</p>
+              </div>
+            </div>
+          </div>
+
+        <Row className="social-row">
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
+              
               <li className="social-icons">
                 <a
-                  href="https://github.com/ritikaghanti"
+                  href="https://github.com/iiaamshriyuktaa"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -66,9 +66,10 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+              
               <li className="social-icons">
                 <a
-                  href="mailto:ritika.ghanti7@gmail.com"
+                  href="mailto:shriyukta.ram21@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -78,7 +79,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/ritika-ghanti/"
+                  href="https://www.linkedin.com/in/shriyuktaram/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -86,6 +87,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
+              {/*}
               <li className="social-icons">
                 <a
                   href="https://leetcode.com/u/ritikaghanti/"
@@ -95,7 +97,7 @@ function Home2() {
                 >
                   <SiLeetcode />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

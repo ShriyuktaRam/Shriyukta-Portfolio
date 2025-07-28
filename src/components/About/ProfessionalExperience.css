@@ -1,0 +1,143 @@
+/* Timeline wrapper */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Center line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(to bottom, #7f00ff, #e100ff);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline item containers */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+/* Icon next to arrow */
+.timeline-icon {
+  position: absolute;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 4px solid #7f00ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #7f00ff;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Left side icon alignment */
+.timeline-item.left .timeline-icon {
+  right: -20px; /* next to arrow on right edge */
+}
+
+/* Right side icon alignment */
+.timeline-item.right .timeline-icon {
+  left: -20px; /* next to arrow on left edge */
+}
+
+/* Click animation */
+.timeline-icon.clicked {
+  transform: scale(1.2);
+}
+
+/* Card content */
+.timeline-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: #000;
+}
+
+/* Arrow pointer */
+.timeline-item.left .timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+
+.timeline-item.right .timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+/* Company & duration styling */
+.company {
+  color: #4a4aff;
+  font-weight: bold;
+}
+
+.duration {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+/* Tags */
+.tags {
+  margin-top: 10px;
+}
+.tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+  color: #fff;
+  padding: 5px 12px;
+  margin: 3px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Ensure text is visible */
+.timeline-content h3,
+.timeline-content h5,
+.timeline-content p,
+.timeline-content span {
+  color: #000 !important;
+}
+

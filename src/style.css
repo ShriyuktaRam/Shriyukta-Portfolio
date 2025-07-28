@@ -1,15 +1,7 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(to bottom right, #ffffff, #f3e7d9);
+--image-gradient: linear-gradient(to bottom right, #ffffff, #f3e7d9);
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
 
   --imp-text-color: #c770f0;
 }
@@ -83,6 +75,7 @@ button:focus {
 }
 
 .navbar {
+  background: rgba(0, 0, 0, 0.85); /* dark background */
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
@@ -257,31 +250,37 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  margin-bottom: 0 !important;   /* Remove extra bottom margin */
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
-  text-align: left;
+  /* padding: 4rem 0 1rem !important; */
+  padding-top: 60px;
+  color: rgb(19, 18, 18);
+  text-align: center;
+  margin-bottom: 0px;
 }
 
+
 .heading {
+  padding-top: 25px;
   font-size: 2.4em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
+
   font-size: 2.5em !important;
   padding-left: 45px !important;
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #d3ad06;
 }
 
 .Typewriter__wrapper {
@@ -319,12 +318,14 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 50px !important;
+  padding-top: 0px !important;
+  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%);
+  
 }
 
 .home-about-description {
-  color: white !important;
+  color: rgb(7, 7, 7) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -333,13 +334,18 @@ button:focus {
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
-  text-align: left;
+  text-align: center;
 }
 
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: rgb(20, 20, 20) !important;
+}
+
+.social-row
+{
+  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%);
 }
 
 .home-about-social-links {
@@ -446,31 +452,43 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
+  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%); 
+  /* background: transparent !important;  */
 }
 
 .project-card {
-  padding-top: 50px !important;
+  padding-top: 20px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
 }
 
+.project-card .card-title {
+  /* color: rgb(97, 16, 117) !important;  /* or gradient if you want 
+  font-weight: bold; */
+  background: linear-gradient(90deg, #ff00cc, #3333ff); /* adjust colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
+  background: #ffffff !important;
+  color: #333333 !important; /* dark solid text */
+  opacity: 1 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(35, 37, 165, 0.561) !important;
 }
 
 .blog-card {
@@ -482,9 +500,9 @@ button:focus {
 }
 
 .blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  background: #fff !important;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+color: #333 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -506,7 +524,7 @@ button:focus {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   border-radius: 10px !important;
 }
 
@@ -532,7 +550,7 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: rgb(3, 3, 3) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -544,37 +562,20 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 70px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important; */
+  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%); 
+  color: rgb(32, 31, 31) !important;
 }
 
-.professional-experience {
-  font-size: 1.5em !important;
-  margin: 1px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  vertical-align: middle !important;
-  /* text-align: center !important; */
-  border-radius: 5px !important;
-  display: flex !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
-  width: max-content !important;
-  height: auto !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
 
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(99, 11, 139, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -582,7 +583,20 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  /*background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%); */
+  /* background: #c5b0ee; */
+  color: rgb(3, 3, 3);
+
+  /* Lower opacity gradient */
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 0, 204, 0.1),   /* pink with 40% opacity */
+    rgba(51, 51, 255, 0.3)    /* blue/purple with 40% opacity */
+  ) !important; 
+   
 }
+
+
 
 @media (max-width: 767px) {
   .tech-icons {
@@ -601,9 +615,10 @@ button:focus {
 }
 
 .quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
+ background: #fff !important;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+color: #333 !important;
+
 }
 
 .about-activity {
@@ -625,8 +640,10 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important;
+  background: transparent !important;  */
+  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%); 
+  color: rgb(29, 28, 28) !important;
 }
 
 .resume {

@@ -15,16 +15,16 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Developed by Ritika Ghanti</h3>
+          <h3>Developed by Shriyukta Ram</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} RG</h3>
+          <h3>Copyright © {year} SR</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/ritikaghanti"
+                href="https://github.com/iiaamshriyuktaa"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -34,7 +34,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="mailto:ritika.ghanti7@gmail.com"
+                href="mailto:shriyukta.ram21@gmail.com"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -44,22 +44,12 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/ritika-ghanti/"
+                href="https://www.linkedin.com/in/shriyuktaram/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://leetcode.com/u/ritikaghanti/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <SiLeetcode />
               </a>
             </li>
           </ul>

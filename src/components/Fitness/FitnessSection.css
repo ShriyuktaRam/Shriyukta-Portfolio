@@ -1,0 +1,238 @@
+.fitness-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.fitness-header {
+  max-width: 900px;     /* keeps text from spanning full screen */
+  margin: 0 auto;       /* centers the content */
+  text-align: center;   /* centers text */
+  padding: 50px 10px;
+  margin-top: -15px;
+}
+
+.gradient-text {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-subtext {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fitness-highlight {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  margin-top : -30px;
+}
+
+.highlight-card {
+  width: 300px;
+}
+
+.image-container {
+  position: relative;
+  width: 110%;
+  height: 530px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  color: #fff;
+}
+
+.overlay h4 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+
+.achievements-section {
+  max-width: 1200px; /* keeps images from spanning full screen */
+  margin: 0 auto;    /* centers the section */
+  padding: 0 40px;   /* adds left-right padding */
+  margin-top: 60px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.achievement-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.achievement-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.achievement-card:hover {
+  transform: scale(1.03);
+}
+
+.achievement-text {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.small-card {
+  height: 280px;
+}
+
+.big-card {
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+/* Activities - masonry style */
+.activities-section {
+  max-width: 1400px; /* or whatever fits your design */
+  margin: 0 auto;
+  margin-top: 40px;  /* pushes the entire block down */
+}
+
+
+.block-heading {
+  
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 8px;
+}
+.masonry-activities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 15px;
+  margin-top: 30px;
+}
+.activity-card {
+  position: relative;
+}
+.activity-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.activity-card p {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+.activity-card.tall {
+  grid-row: span 2;
+}
+.activity-card.shift-down {
+  transform: translateY(30px);
+}
+
+/* India Journey Section */
+
+.indiaact-section{
+  margin-top: 60px;
+}
+.india-heading .flag-icon {
+  width: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+  
+}
+.india-collage {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  margin-top: 30px;
+    padding-left: 40px;  /* <-- Added left padding */
+  padding-right: 40px; /* <-- Added right padding */
+  max-width: 1200px;   /* optional, to restrict width on big screens */
+  margin-left: auto;   /* center the collage */
+  margin-right: auto;  /* center the collage */
+  
+}
+.india-collage .collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .short-text { max-width: 100%; }
+  .masonry-activities { grid-auto-rows: auto; }
+  .activity-card.tall { grid-row: auto; }
+  .activity-card.shift-down { transform: none; }
+}

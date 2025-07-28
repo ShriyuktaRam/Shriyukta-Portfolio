@@ -7,36 +7,24 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hey, I am <span className="purple">Ritika Ghanti </span>
-            from <span className="purple"> Arlington, Texas</span>
-            <br />
-            I am currently pursuing my Master's in Computer Science at The University of Texas at Arlington.
-            <br />
-            I have 1.5 years of Software Engineering internship and 1 year of Teaching Assistant experience 
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Sports
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Running
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Singing
-            </li>
-          </ul>
+          <p>
+  With a Master’s in Computer Science from The University of Texas at Arlington—focused on Artificial Intelligence and Databases—my journey blends deep technical skills with a passion for innovation.
+</p>
+<p>
+  It began with a Bachelor's in Electronics and Telecommunication Engineering, where I first grew curious about how real-world systems are shaped by technology. That curiosity led me to Tata Consultancy Services, where I served as an Oracle Database Engineer managing high-performance enterprise systems.
+</p>
+<p>
+ Today, I channel that experience into building intelligent, scalable solutions that combine cloud technologies and AI. I'm currently working as a Software Developer Intern at YourPassion1st, contributing to platforms that uplift communities through tech-driven programs.
+</p>
+
+
+
+
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "It does not matter how slowly you go so long as you do not stop. Just don't give up"{" "}
+            "If you ever get tired, learn to rest. Not to quit"{" "} -Shriyukta Ram
           </p>
-          <footer className="blockquote-footer">Ritika</footer>
+        
         </blockquote>
       </Card.Body>
     </Card>

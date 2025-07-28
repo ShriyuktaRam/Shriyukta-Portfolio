@@ -6,6 +6,10 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Playground from "./components/Playground/Playground";
+import FitnessSection from "./components/Fitness/FitnessSection";
+
+
 import {
   BrowserRouter as Router,
   Route,
@@ -40,6 +44,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/playground" element={<Playground />} />
+          <Route path="/fitness" element={<FitnessSection />} />
         </Routes>
         <Footer />
       </div>
