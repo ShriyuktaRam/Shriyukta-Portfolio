@@ -17,7 +17,9 @@ function Home() {
                <h1 style={{ paddingBottom: 1 }} className="heading">
                 Hi There!{" "}
                 
-                I am <strong className="main-name"> Shriyukta Ram</strong>
+                {/* I am <strong className="main-name"> Shriyukta Ram</strong> */}
+
+                I am <strong className="purple"> &lt;Shriyukta /&gt;</strong>
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>

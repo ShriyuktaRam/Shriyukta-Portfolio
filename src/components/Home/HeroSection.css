@@ -1,103 +1,139 @@
 .hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*height: 100vh; */
-  height: auto;
-padding-top: 4px; /* optional */
-padding-bottom: 40px;
-  background: linear-gradient(180deg, #f9f9f9 0%, #f3f3f3 100%);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.image-wrapper {
-  position: relative;
-  width: 85%;
-  max-width: 1800px;
-  
-}
-
-.main-image {
+.hero-image {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  /*margin-top: -40px;
-  margin-bottom: -40px; */
-} 
-
-/* Full Screen 
-.image-wrapper {
-  position: relative;
-  width: 100%;      
-  max-width: none;  
-} 
-
-.main-image {
-  width: 100%;
-  height: 100vh;    
+  height: 100%;
   object-fit: cover;
-  border-radius: 0; 
-} */
+}
 
-
-/* Default combined left text */
-.left-default {
+/* Left half container */
+.left-half {
   position: absolute;
-  top: 40%;
-  left: 1%;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-}
-
-/* Right text (always visible) */
-.developer-label {
-  position: absolute;
-  top: 40%;
-  right: 1%;
-  color: white;
-  font-weight: bold;
-  text-align: right;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-}
-
-.subtext {
-  font-size: 1rem;
-  opacity: 0.8;
-  transition: opacity 0.3s ease; 
-  
-}
-.label:hover .subtext, .overlay:hover .subtext {
-  opacity: 1;
-}
-
-/* Hover zones */
-.hover-zone {
-  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48.4%;
+  height: 100%;
   cursor: pointer;
-  pointer-events: auto; 
-
+  display: flex;
+  flex-direction: column;
 }
-.left-half { top: 0; left: 0; width: 50%; height: 100%; }
-.right-half { top: 0; right: 0; width: 50%; height: 100%; }
 
-/* Split overlays (appear only on hover) */
-.overlay {
-  position: absolute;
-  width: 50%;
-  color: white;
-  padding: 20px;
+/* Split top and bottom with gradients */
+.top-left,
+.bottom-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.5rem 2rem;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+/* Classy gradient overlays */
+.top-left {
+  background: linear-gradient(
+    to bottom right,
+    rgba(63, 2, 63, 0.55) 0%,   /* Light blue */
+    rgba(173, 216, 230, 0.15) 100%  /* Transparentish */
+  );
+}
+.bottom-left {
+  background: linear-gradient(
+    to bottom right,
+    rgba(221, 62, 168, 0.308) 0%,   /* Warm light wheat/yellow */
+    rgba(245, 222, 179, 0.15) 100%
+  );
+}
+
+.top-left h2,
+.bottom-left h2 {
+  font-size: 1.8rem;
   font-weight: bold;
-  pointer-events: auto;           /* High enough to be clickable, low enough to not interrupt layout */
+  margin-bottom: 0.3rem;
+  color: white;
 }
-.left-top {
-  top: 0; left: 0; height: 50%; width: 48.4%;
-  background: rgba(255, 215, 0, 0.2);
-}
-.left-bottom {
-  bottom: 0; left: 0; height: 50%; width: 48.4%;
-  background: rgba(97, 174, 226, 0.2);
+.top-left p,
+.bottom-left p {
+  font-size: 1rem;
+  color: white;
 }
 
+/* Default text */
+.left-default-text {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2;
+}
+.left-default-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.left-default-text p {
+  font-size: 1.1rem;
+}
+
+/* Right half text */
+.right-half-text {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+  color: white;
+  cursor: pointer;
+}
+.right-half-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.right-half-text p {
+  font-size: 1.1rem;
+}
+
+/* Mobile view tweaks */
+@media (max-width: 768px) {
+  .top-left h2,
+  .bottom-left h2 {
+    font-size: 1rem;
+  }
+  .top-left p,
+  .bottom-left p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .top-left h2,
+  .bottom-left h2,
+  .top-left p,
+  .bottom-left p,
+  .left-default-text,
+  .right-half-text {
+    display: none; /* minimal clutter on very small screens */
+  }
+  .top-left {
+    background: linear-gradient(
+      to bottom right,
+      rgba(173, 216, 230, 0.35),
+      rgba(173, 216, 230, 0.05)
+    );
+  }
+  .bottom-left {
+    background: linear-gradient(
+      to bottom right,
+      rgba(245, 222, 179, 0.35),
+      rgba(245, 222, 179, 0.05)
+    );
+  }
+}
 
 
 
