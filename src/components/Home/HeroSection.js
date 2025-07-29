@@ -54,7 +54,7 @@ const HeroSection = () => {
       {/* Right Half (Clickable) */}
       <div className="right-half-text" onClick={() => navigate("/about")}>
         <h2>Software Developer</h2>
-        <p>Building scalable systems & AI's</p>
+        <p>Coding scalable solutions, One commit at a time</p>
       </div>
     </div>
 

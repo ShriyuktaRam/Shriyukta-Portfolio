@@ -69,7 +69,7 @@
 .left-default-text {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 10px;
   transform: translateY(-50%);
   color: white;
   z-index: 2;
@@ -86,7 +86,8 @@
 .right-half-text {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left:74%; /* move slightly more right */
+  transform: translate(-50%, -50%); /* keep it centered relative to its own width */
   transform: translateY(-50%);
   color: white;
   cursor: pointer;
