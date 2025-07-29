@@ -87,9 +87,10 @@ function FitnessSection() {
   </div>
 </section>
 
-     {/* Achievements */}
+{/*
+     {/* Achievements *
 <div className="achievements-section">
-  {/* <h3 className="fitness-subtitle fitness-title gradient-text">Achievements</h3> */}
+  {/* <h3 className="fitness-subtitle fitness-title gradient-text">Achievements</h3> 
   <h2 className="project-heading"> Achievements </h2>
   <div className="achievements-grid">
     <div className="achievement-left">
@@ -110,7 +111,7 @@ function FitnessSection() {
       </p>
     </div>
   </div>
-</div>
+</div> */}
 
             {/* Activities Block */}
       <div className="activities-section">
@@ -121,39 +122,27 @@ function FitnessSection() {
 
 
   <h2 className="project-heading"> 
-     <strong className="purple">Barbells </strong> are my BFFs & I love  <strong className="purple">monkeying </strong> around! </h2>
-  <p style={{ color: "black" }}> Whether it’s CrossFit, Olympic weightlifting, or any challenge that pushes me.
-  I’m always up for it. </p>
+     <strong className="purple">Pushing Limits,</strong> On the Barbell & Beyond </h2>
+  <p style={{ color: "black" }}> Whether it’s refining an algorithm or chasing a personal record on the lifting platform, I love taking on challenges that push me outside my comfort zone. 
+    <br />Olympic weightlifting, CrossFit, and endurance races fuel my competitive spirit and continuous growth
+ </p>
 
 
         <div className="masonry-activities">
-          <div className="activity-card tall"><img src={act4} alt="yoga" /><p>Headstand (Yoga)</p></div>
-          <div className="activity-card"><img src={act1} alt="bosuball" /><p>Bosu ball crunches</p></div>
-          <div className="activity-card"><img src={act5} alt="squat" /><p>Olympic Squat Clean</p></div>
-          <div className="activity-card"><img src={act3} alt="rope" /><p>Rope Climbing</p></div>
-          <div className="activity-card tall"><img src={act2} alt="snatch" /><p>Olympic Weightlifting - Snatch</p></div>
-          <div className="activity-card"><img src={act6} alt="tire" /><p>Tire Flipping</p></div>
-          <div className="activity-card"><img src={act7} alt="sled" /><p>Sled Pull (250lb)</p></div>
-          <div className="activity-card"><img src={act8} alt="stability" /><p>Stability Ball Balance</p></div>
-        </div>
+          <div className="activity-card tall"><img src={india3} alt="yoga" /><p>Devil's Circuit Competition</p></div>
+          <div className="activity-card"><img src={act2} alt="snatch" /><p>Olympic Weightlifting - Snatch</p></div>
+          <div className="activity-card"><img src={act3} alt="snatch" /><p>Crossfit - Rope Climbing</p></div>
+          <div className="activity-card"><img src={act5} alt="tire" /><p>Olympic Weightlifting - Clean & Jerk</p></div>
+          <div className="activity-card tall"><img src={india1} alt="sled" /><p>5km Obstacle Race</p></div>
+          <div className="activity-card"><img src={act7} alt="squat" /><p>Sled Pull (250lb)</p></div>
+  <div className="activity-card"><img src={india2} alt="bosuball" /><p>Irving Marathon</p></div>
+  <div className="activity-card"><img src={act6} alt="snatch" /><p>Crossfit - Tire Fip</p></div>
+      </div>
       </div>
 
-       {/* Fitness Journey in India */}
+       {/* Fitness Journey in India 
        <div className="indiaact-section">
-      {/*<h3 className="fitness-subtitle india-heading fitness-title gradient-text">
-        Fueled by Competition, Driven by Passion
-      </h3>
-      <p className="fitness-achievements fitness-desc gradient-subtext">
-  I love testing my limits through competitive events.<br />
-  From conquering the <b>Maruti Suzuki Devils Circuit</b> – a 5 km obstacle race 
-  with 15 challenging hurdles<br />
-  to pushing myself at the <b>NoBull CrossFit Games Open 2023</b>, where I ranked 
-  <b> 37th in my category in India</b>,<br />
-  every event is a chance to grow stronger.<br />
-  I’ve also participated in marathons and endurance races, celebrating the spirit of 
-  fitness and community at every finish line.
-      </p> */}
-
+    
 <h2 className="project-heading">
         Fueled by <strong className="purple">Competition </strong>, Driven by <strong className="purple">Passion </strong>
       </h2>
@@ -166,8 +155,7 @@ function FitnessSection() {
   every event is a chance to grow stronger.<br />
   I’ve also participated in marathons and endurance races, celebrating the spirit of 
   fitness and community at every finish line.
-      </p>
-
+      </p> 
 
       <div className="india-collage">
         {[india4, india1, india2, india3].map((img, index) => (
@@ -176,11 +164,10 @@ function FitnessSection() {
           </div>
         ))}
       </div>
-    </div>
+    </div> */}
 
     </Container>
   );
 }
 
 export default FitnessSection;
-

@@ -33,6 +33,7 @@ import workRight1 from "../../Assets/playground/w3.jpeg";
 import workRight2 from "../../Assets/playground/w5.jpeg";
 
 import rangtaLogo from "../../Assets/playground/rangtalogo.jpeg";
+import FitnessSection from "../Fitness/FitnessSection";
 
 
 
@@ -84,7 +85,7 @@ function Playground() {
     </Col>
     <Col md={6}>
       <Carousel className="art-carousel" indicators={true}>
-        {[art1, art2, art3, art4, art5, art6].map((img, idx) => (
+        {[art5, springLeft1,art2, art1, springRight1, art3, art4, art6,springLeft2, springRight2].map((img, idx) => (
           <Carousel.Item key={idx}>
             <img className="d-block carousel-img" src={img} alt={`art-${idx}`} />
           </Carousel.Item>
@@ -96,10 +97,9 @@ function Playground() {
 
   {/* Fall Sale Stall */}
       <Container className="stall-section">
-        <h2 className="project-heading">Annual Fall Sale – <strong className="purple">Irving Heritage Center </strong></h2>
+        <h2 className="project-heading">Showcasing Art & Creativity at – <strong className="purple">Community Sales </strong></h2>
         <p className="stall-desc">
-          I set up a stall at the Fall Sale in Irving Heritage Center. It was a wonderful
-          experience interacting with elderly customers and feeling their enthusiasm for handmade art.
+          Participated in the UTA Entrepreneur Club’s Spring Sale, where I promoted eco‑friendly gifts and engaged with peers to encourage sustainable art and creativity on campus.
         </p>
         <div className="stall-images">
           <div className="stall-left">
@@ -139,7 +139,7 @@ function Playground() {
   </div>
 </Container>
 
-      {/* Spring Sale Stall */}
+      {/* Spring Sale Stall 
       <Container className="stall-section">
         <h2 className="project-heading">Spring Sale – <strong className="purple">UTA Campus </strong></h2>
         <p className="stall-desc">
@@ -159,9 +159,9 @@ function Playground() {
             <img src={springRight2} alt="spring-right2" className="hover-img" />
           </div>
         </div>
-      </Container>
+      </Container> */}
 
-
+ <FitnessSection/>
     </Container>
   );
 }
