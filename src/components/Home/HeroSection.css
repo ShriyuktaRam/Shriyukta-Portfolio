@@ -86,7 +86,7 @@
 .right-half-text {
   position: absolute;
   top: 50%;
-  left:74%; /* move slightly more right */
+  left:73%; /* move slightly more right */
   transform: translate(-50%, -50%); /* keep it centered relative to its own width */
   transform: translateY(-50%);
   color: white;
