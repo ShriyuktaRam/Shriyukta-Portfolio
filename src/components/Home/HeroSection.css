@@ -135,6 +135,36 @@
   }
 }
 
+/* Mobile view (below 768px) */
+@media (max-width: 768px) {
+  /* Make the image take most of the width and auto height */
+  .hero-image {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Hide overlays and text for a clean look */
+  .left-half,
+  .top-left,
+  .bottom-left,
+  .left-default-text,
+  .right-half-text {
+    display: none;
+  }
+
+  /* Center image nicely */
+  .hero-container {
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; /* or keep your theme background */
+  }
+}
+
+
 
 
 
