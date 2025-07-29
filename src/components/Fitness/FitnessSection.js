@@ -124,7 +124,7 @@ function FitnessSection() {
   <h2 className="project-heading"> 
      <strong className="purple">Pushing Limits,</strong> On the Barbell & Beyond </h2>
   <p style={{ color: "black" }}> Whether it’s refining an algorithm or chasing a personal record on the lifting platform, I love taking on challenges that push me outside my comfort zone. 
-    <br />Olympic weightlifting, CrossFit, and endurance races fuel my competitive spirit and continuous growth
+    <br />Olympic weightlifting, CrossFit, and endurance races fuel my competitive spirit and keep me grounded and disciplined.
  </p>
 
 
