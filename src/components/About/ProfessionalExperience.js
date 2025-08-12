@@ -5,29 +5,29 @@ import "./ProfessionalExperience.css";
 const experiences = [
   {
     icon: <FaReact />,
-    role: "Software Developer",
-    company: "YourPassion1st",
-    duration: "06/2025 - Present",
+    role: "Software Development Engineer",
+    company: "ServiceNow",
+    duration: "11/2024 - Present",
     description:
-      "Designed and deployed full‑stack features for a gamified mentorship app and built LLM‑powered web scraping pipelines, leveraging Azure to deliver 40% faster APIs, 42% improved data accuracy, and support for 500+ pilot users.",
-    tags: ["React Native", "Python", "Microsoft Azure"],
+      "Engineered scalable Python (FastAPI) microservices, automated log analytics with Elasticsearch and AWS S3, and implemented RBAC-secured APIs, delivering 40% higher throughput, 30% faster workflows, and SOC 2-compliant security for enterprise IT systems.",
+    tags: ["FastAPI", "AWS", "Microservices"],
   },
   {
     icon: <FaRobot />,
-    role: "Oracle Database Engineer",
-    company: "Tata Consultancy Services",
-    duration: "08/2021 - 06/2023",
+    role: "Software Developer",
+    company: "Virtual Infotech Solution",
+    duration: "08/2021 - 07/2023",
     description:
-      "Designed and optimized SQL queries, indexes, and PL/SQL packages, automated backup and recovery workflows using RMAN, and resolved production data issues, improving query performance by 35% and ensuring 99.99% platform uptime.",
-    tags: ["Oracle", "SQL Tuning", "Shell Scripting"],
+      "Designed and deployed Django REST APIs, high-accuracy Python data pipelines, and ML retention models, improving analytics speed by 35%, boosting retention rates by 18%, and reducing manual processing time by 70% for a Customer Intelligence Platform.",
+    tags: ["Django REST", "Data Engineering", "Machine Learning"],
   },
   {
     icon: <FaCode />,
-    role: "Full Stack Developer",
-    company: "Tequed Labs",
-    duration: "07/2020 - 12/2020",
-    description: "Built ‘TRAVELOGRAPHY’, a full‑stack travel web app with secure user authentication and dynamic package management, reducing manual updates by 60% and onboarding 200+ pilot users.",
-    tags: ["NodeJS", "PHP", "MySQL"],
+    role: "Junior Software Developer",
+    company: "Virtual Infotech Solution",
+    duration: "06/2020 - 04/2021",
+    description: "Built backend automation modules, Flask APIs, and Dockerized deployments with MySQL integration, reducing administrative processing time by 20%, cutting API response times under 400ms, and streamlining release cycles with standardized CI/CD workflows.",
+    tags: ["Flask", "Docker", "MySQL"],
   },
 ];
 
